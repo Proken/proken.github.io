@@ -34,7 +34,10 @@ font-size: 16px;
 <body>
 <div class="demo"><h1>lalala</h1><p>Hello</p></div>
 <script>
-$( "p" ).scrollTop( 300 );
+$( "p" ).scrollTop(300).on("click", function() {
+$( "p.second" ).toggle( "slow" );
+});
+
 </script>
 </body>
 </html>
